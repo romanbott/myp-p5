@@ -1,7 +1,7 @@
 def calcular_envio(peso: float, tipo: str) -> float:
 
     if peso <= 0:
-        raise ValueError("El pso debe ser positivo.")
+        raise ValueError("El peso debe ser positivo.")
 
     if tipo not in ["estandar", "express"]:
         raise ValueError("El tipo debe ser 'estandar' o 'express'")
