@@ -29,3 +29,14 @@ envio.py:2: NotImplementedError
 FAILED test_envio.py::test_envio_estandar_hasta_5k - NotImplementedError
 ============================== 1 failed in 0.02s ===============================
 ```
+
+## Ciclo 1 - Verde
+
+```
+============================= test session starts ==============================
+collected 1 item
+
+test_envio.py .                                                          [100%]
+
+============================== 1 passed in 0.01s ===============================
+```
