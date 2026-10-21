@@ -95,3 +95,14 @@ FAILED test_envio.py::test_envio_estandar_1k_excedente - NotImplementedError
 FAILED test_envio.py::test_envio_estandar_2k_excedente - NotImplementedError
 ========================= 2 failed, 2 passed in 0.02s ==========================
 ```
+
+## Ciclo 2 - Verde
+
+```
+============================= test session starts ==============================
+collected 4 items
+
+test_envio.py ....                                                       [100%]
+
+============================== 4 passed in 0.01s ===============================
+```
