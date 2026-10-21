@@ -222,3 +222,25 @@ test_envio.py ........                                                   [100%]
 
 ============================== 8 passed in 0.01s ===============================
 ```
+
+## Ciclo 5 - Rojo
+
+```
+============================= test session starts ==============================
+collected 9 items
+
+test_envio.py ........F                                                  [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_tipo_invalido ______________________________
+
+    def test_tipo_invalido():
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+test_envio.py:41: Failed
+=========================== short test summary info ============================
+FAILED test_envio.py::test_tipo_invalido - Failed: DID NOT RAISE ValueError
+========================= 1 failed, 8 passed in 0.02s ==========================
+```

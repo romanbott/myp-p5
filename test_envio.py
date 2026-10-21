@@ -35,3 +35,8 @@ def test_peso_cero_es_invalido():
 def test_peso_negativo_es_invalido():
     with pytest.raises(ValueError):
         calcular_envio(-2, "express")
+
+
+def test_tipo_invalido():
+    with pytest.raises(ValueError):
+        calcular_envio(1, "urgente")
