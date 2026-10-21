@@ -211,3 +211,14 @@ FAILED test_envio.py::test_peso_cero_es_invalido - Failed: DID NOT RAISE Valu...
 FAILED test_envio.py::test_peso_negativo_es_invalido - Failed: DID NOT RAISE ...
 ========================= 2 failed, 6 passed in 0.03s ==========================
 ```
+
+## Ciclo 4 - Verde
+
+```
+============================= test session starts ==============================
+collected 8 items
+
+test_envio.py ........                                                   [100%]
+
+============================== 8 passed in 0.01s ===============================
+```

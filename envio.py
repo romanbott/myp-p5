@@ -1,5 +1,8 @@
 def calcular_envio(peso: float, tipo: str) -> float:
 
+    if peso <= 0:
+        raise ValueError("El pso debe ser positivo.")
+
     if peso <= 5:
         costo_base = 50
     else:
