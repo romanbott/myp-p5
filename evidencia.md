@@ -106,3 +106,66 @@ test_envio.py ....                                                       [100%]
 
 ============================== 4 passed in 0.01s ===============================
 ```
+
+## Ciclo 3 - Rojo
+
+```
+============================= test session starts ==============================
+collected 6 items
+
+test_envio.py ....FF                                                     [100%]
+
+=================================== FAILURES ===================================
+_________________________ test_envio_express_hasta_5k __________________________
+
+    def test_envio_express_hasta_5k():
+>       assert calcular_envio(3, "express") == 100
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_envio.py:21:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+peso = 3, tipo = 'express'
+
+    def calcular_envio(peso: float, tipo: str) -> float:
+        if peso <= 5 and tipo == "estandar":
+            return 50
+
+        if peso > 5 and tipo == "estandar":
+            excedente = peso - 5
+
+            return 50 + excedente * 10
+
+>       raise NotImplementedError
+E       NotImplementedError
+
+envio.py:10: NotImplementedError
+_______________________ test_envio_express_2k_excedente ________________________
+
+    def test_envio_express_2k_excedente():
+>       assert calcular_envio(7, "express") == 140
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_envio.py:25:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+peso = 7, tipo = 'express'
+
+    def calcular_envio(peso: float, tipo: str) -> float:
+        if peso <= 5 and tipo == "estandar":
+            return 50
+
+        if peso > 5 and tipo == "estandar":
+            excedente = peso - 5
+
+            return 50 + excedente * 10
+
+>       raise NotImplementedError
+E       NotImplementedError
+
+envio.py:10: NotImplementedError
+=========================== short test summary info ============================
+FAILED test_envio.py::test_envio_express_hasta_5k - NotImplementedError
+FAILED test_envio.py::test_envio_express_2k_excedente - NotImplementedError
+========================= 2 failed, 4 passed in 0.03s ==========================
+```
