@@ -1,3 +1,5 @@
+import pytest
+
 from envio import calcular_envio
 
 
@@ -23,3 +25,13 @@ def test_envio_express_hasta_5k():
 
 def test_envio_express_2k_excedente():
     assert calcular_envio(7, "express") == 140
+
+
+def test_peso_cero_es_invalido():
+    with pytest.raises(ValueError):
+        calcular_envio(0, "estandar")
+
+
+def test_peso_negativo_es_invalido():
+    with pytest.raises(ValueError):
+        calcular_envio(-2, "express")

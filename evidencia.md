@@ -180,3 +180,34 @@ test_envio.py ......                                                     [100%]
 
 ============================== 6 passed in 0.01s ===============================
 ```
+
+## Ciclo 4 - Rojo
+
+```
+============================= test session starts ==============================
+collected 8 items
+
+test_envio.py ......FF                                                   [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_peso_cero_es_invalido __________________________
+
+    def test_peso_cero_es_invalido():
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+test_envio.py:31: Failed
+________________________ test_peso_negativo_es_invalido ________________________
+
+    def test_peso_negativo_es_invalido():
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+test_envio.py:36: Failed
+=========================== short test summary info ============================
+FAILED test_envio.py::test_peso_cero_es_invalido - Failed: DID NOT RAISE Valu...
+FAILED test_envio.py::test_peso_negativo_es_invalido - Failed: DID NOT RAISE ...
+========================= 2 failed, 6 passed in 0.03s ==========================
+```
