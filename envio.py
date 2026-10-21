@@ -1,10 +1,11 @@
 def calcular_envio(peso: float, tipo: str) -> float:
-    if peso <= 5 and tipo == "estandar":
-        return 50
 
-    if peso > 5 and tipo == "estandar":
+    if peso <= 5:
+        costo_base = 50
+    else:
         excedente = peso - 5
+        costo_base = 50 + excedente * 10
 
-        return 50 + excedente * 10
-
-    raise NotImplementedError
+    if tipo == "estandar":
+        return costo_base
+    return 2 * costo_base

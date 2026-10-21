@@ -169,3 +169,14 @@ FAILED test_envio.py::test_envio_express_hasta_5k - NotImplementedError
 FAILED test_envio.py::test_envio_express_2k_excedente - NotImplementedError
 ========================= 2 failed, 4 passed in 0.03s ==========================
 ```
+
+## Ciclo 3 - Verde
+
+```
+============================= test session starts ==============================
+collected 6 items
+
+test_envio.py ......                                                     [100%]
+
+============================== 6 passed in 0.01s ===============================
+```
