@@ -244,3 +244,14 @@ test_envio.py:41: Failed
 FAILED test_envio.py::test_tipo_invalido - Failed: DID NOT RAISE ValueError
 ========================= 1 failed, 8 passed in 0.02s ==========================
 ```
+
+## Ciclo 5 - Verde
+
+```
+============================= test session starts ==============================
+collected 9 items
+
+test_envio.py .........                                                  [100%]
+
+============================== 9 passed in 0.01s ===============================
+```
